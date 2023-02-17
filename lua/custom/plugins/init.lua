@@ -17,4 +17,5 @@ return {
       require "custom.plugins.configs.prettier"
     end,
   },
+  ["mbbill/undotree"] = {},
 }
