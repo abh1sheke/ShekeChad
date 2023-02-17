@@ -26,6 +26,9 @@ return {
           return require "custom.plugins.configs.tabufline"
         end,
       },
+      statusline = {
+        separator_style = "arrow"
+      }
     },
   },
   ["windwp/nvim-autopairs"] = {
