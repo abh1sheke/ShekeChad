@@ -4,6 +4,7 @@ local M = {}
 
 M.ui = {
   theme = "decay",
+  transparency = true,
 }
 
 M.plugins = require "custom.plugins.init"
