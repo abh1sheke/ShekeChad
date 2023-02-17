@@ -18,4 +18,14 @@ return {
     end,
   },
   ["mbbill/undotree"] = {},
+  ["NvChad/ui"] = {
+    override_options = {
+      tabufline = {
+        lazyload = true,
+        overriden_modules = function()
+          return require "custom.plugins.configs.tabufline"
+        end,
+      },
+    },
+  },
 }
