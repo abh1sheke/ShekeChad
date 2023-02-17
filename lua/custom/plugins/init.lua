@@ -34,4 +34,42 @@ return {
   ["windwp/nvim-autopairs"] = {
     disable = true,
   },
+  ["williamboman/mason.nvim"] = {
+   override_options = {
+      ensure_installed = {
+        -- lua stuff
+        "lua-language-server",
+        "stylua",
+
+        -- web dev
+        "css-lsp",
+        "html-lsp",
+        "typescript-language-server",
+        "json-lsp",
+        "svelte-language-server",
+        "prisma-language-server",
+        "astro-language-server",
+        "eslint-lsp",
+        "eslint_d",
+        "prettier",
+        "prettierd",
+        "tailwindcss-language-server",
+
+        -- go
+        "gopls",
+
+        -- python
+        "pyright",
+        "autopep8",
+
+        -- rust
+        "rust_analyzer",
+        "rustfmt",
+
+        -- shell
+        "shfmt",
+        "shellcheck",
+      },
+    },
+  }
 }
