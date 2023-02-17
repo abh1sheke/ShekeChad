@@ -28,4 +28,7 @@ return {
       },
     },
   },
+  ["windwp/nvim-autopairs"] = {
+    disable = true,
+  },
 }
