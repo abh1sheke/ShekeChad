@@ -12,7 +12,8 @@ local servers = {
   "svelte",
   "rust_analyzer",
   "pyright",
-  "astro"
+  "astro",
+  "gopls"
 }
 
 for _, lsp in ipairs(servers) do
