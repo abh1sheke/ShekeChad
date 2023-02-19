@@ -14,6 +14,10 @@ local sources = {
   -- Lua
   b.formatting.stylua,
 
+  -- Go
+  b.formatting.gofumpt,
+  b.formatting.goimports,
+
   -- Others
   b.formatting.autopep8,
   b.formatting.rustfmt,
