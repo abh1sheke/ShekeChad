@@ -12,6 +12,41 @@ M.telescope = {
   },
 }
 
+M.trouble = {
+  n = {
+    ["<leader>er"] = {
+      "<cmd> TroubleToggle <CR>",
+      "toggle trouble errors screen",
+      opts = { silent = true, noremap = true },
+    },
+    ["<leader>ew"] = {
+      "<cmd> TroubleToggle workspace_diagnostics <CR>",
+      "toggle trouble workplace diagnostics",
+      opts = { silent = true, noremap = true },
+    },
+    ["<leader>ed"] = {
+      "<cmd> TroubleToggle document_diagnostics <CR>",
+      "toggle trouble document diagnostics",
+      opts = { silent = true, noremap = true },
+    },
+    ["<leader>el"] = {
+      "<cmd> TroubleToggle loclist <CR>",
+      "toggle trouble loclist",
+      opts = { silent = true, noremap = true },
+    },
+    ["<leader>eq"] = {
+      "<cmd> TroubleToggle quickfix <CR>",
+      "make suggested quickfixes",
+      opts = { silent = true, noremap = true },
+    },
+    ["gR"] = {
+      "<cmd> TroubleToggle lsp_references <CR>",
+      "get lsp_references",
+      opts = { silent = true, noremap = true },
+    },
+  },
+}
+
 M.formatting = {
   n = {
     ["<leader>pp"] = { "<cmd> Prettier <CR>", "prettier formatting" },

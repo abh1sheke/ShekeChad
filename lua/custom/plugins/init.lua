@@ -27,15 +27,15 @@ return {
         end,
       },
       statusline = {
-        separator_style = "arrow"
-      }
+        separator_style = "arrow",
+      },
     },
   },
   ["windwp/nvim-autopairs"] = {
     disable = true,
   },
   ["williamboman/mason.nvim"] = {
-   override_options = {
+    override_options = {
       ensure_installed = {
         -- lua stuff
         "lua-language-server",
@@ -71,5 +71,10 @@ return {
         "shellcheck",
       },
     },
-  }
+  },
+  ["folke/trouble.nvim"] = {
+    config = function()
+      require "custom.plugins.configs.trouble"
+    end,
+  },
 }
