@@ -7,13 +7,13 @@ local servers = {
   "cssls",
   "clangd",
   "tsserver",
-  "eslint",
   "tailwindcss",
   "svelte",
   "rust_analyzer",
   "pyright",
   "astro",
-  "gopls"
+  "gopls",
+  "prismals"
 }
 
 for _, lsp in ipairs(servers) do
