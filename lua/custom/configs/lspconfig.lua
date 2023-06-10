@@ -4,23 +4,25 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 local servers = {
-  "html",
-  "cssls",
-  "tsserver",
-  "prismals",
-  "rust_analyzer",
-  "svelte",
-  "tailwindcss",
-  "gopls",
-  "jsonls",
-  "svelte",
-  "dockerls",
-  "pyright"
+    "html",
+    "cssls",
+    "prismals",
+    "rust_analyzer",
+    "svelte",
+    "tailwindcss",
+    "gopls",
+    "jsonls",
+    "svelte",
+    "dockerls",
+    "pyright",
+    "eslint",
+    "tsserver",
+    "dartls"
 }
 
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-  }
+    lspconfig[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+    }
 end
