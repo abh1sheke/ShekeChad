@@ -20,9 +20,15 @@ local servers = {
     "dartls",
 }
 
+local function custom_on_attach(client, bufrn)
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentRangeFormattingProvider = false
+    on_attach(client, bufrn)
+end
+
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
-        on_attach = on_attach,
+        on_attach = custom_on_attach,
         capabilities = capabilities,
     }
 end
