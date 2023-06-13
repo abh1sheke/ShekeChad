@@ -17,7 +17,7 @@ local servers = {
     "pyright",
     "eslint",
     "tsserver",
-    "dartls"
+    "dartls",
 }
 
 for _, lsp in ipairs(servers) do
