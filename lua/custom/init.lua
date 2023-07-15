@@ -25,10 +25,3 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 4
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append "@-@"
-
-local function open_nvim_tree()
-  vim.cmd.NvimTreeToggle()
-end
-
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree } )
