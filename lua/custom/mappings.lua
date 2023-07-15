@@ -7,9 +7,9 @@ M.general = {
     },
 }
 
-M.nvimtree = {
+M.netrw = {
     n = {
-        ["<leader>pv"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvim-tree" },
+        ["<leader>e"] = { "<cmd> Ex <CR>", "toggle netrw file tree" },
     },
 }
 
