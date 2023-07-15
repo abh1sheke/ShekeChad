@@ -32,6 +32,15 @@ local plugins = {
         opts = overrides.nvimtree,
     },
     { "windwp/nvim-autopairs", enabled = false },
+    { "NvChad/nvterm",         enabled = false },
+    {
+        "nvim-tree/nvim-tree.lua",
+        enabled = false,
+        opts = {
+            disable_netrw = false,
+            hijack_netrw = false,
+        },
+    },
     {
         "max397574/better-escape.nvim",
         event = "InsertEnter",
